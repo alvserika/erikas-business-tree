@@ -26,7 +26,7 @@ body #main {
   padding: 56px 24px 0px;
 }
 body #main .profile #pic {
-  border: 1px solid 0;
+  border: 2px solid black;
   border-radius: 50%;
   width: 112px;
 }
@@ -39,9 +39,9 @@ body #main .profile p {
 }
 body #main .links {
   padding: 24px;
-  gap: 16px;
 }
 body #main .links button {
+  margin: 10px;
   border-radius: 8px !important;
   border: 1px solid var(--stroke-color-light-mode, rgba(0, 0, 0, 0.5)) !important;
   background: var(--surface-color-light-mode, rgba(0, 0, 0, 0.05)) !important;
