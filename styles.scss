@@ -11,7 +11,9 @@
     --surface-color-light-mode: rgba(0, 0, 0, 0.05);
     --text-color-light-mode: #000;
     --surface-color-light-mode-hover: rgba(0, 0, 0, 0.02);
+    --border-gradient: linear-gradient(to right, #996DFF, #FF876E, #FFB671);
     --fonte: 'Inter', sans-serif;
+
 
     --preto: #000;
 }
@@ -28,9 +30,9 @@ body {
 
         .profile {
             #pic {
-                border: 2px solid black;
                 border-radius: 50%;
-                width: 112px; 
+                width: 112px;
+                height: 112px;
             }
             p {
                 font-size: 16px;
@@ -47,13 +49,14 @@ body {
             button {
                 margin: 10px;
                 border-radius: 8px !important;
-                border: 1px solid var(--stroke-color-light-mode, rgba(0, 0, 0, 0.50)) !important;
+                border: 1px solid rgba(0, 0, 0, 0.286);
                 background: var(--surface-color-light-mode, rgba(0, 0, 0, 0.05)) !important;
                 backdrop-filter: blur(4px);
 
                 &:hover {
                     border: 1.5px solid var(--text-color-light-mode, #000) !important;
                     background-color: var(--surface-color-light-mode-hover, rgba(0, 0, 0, 0.02)) !important ;
+                    backdrop-filter: blur(9px);
                     transition: background 0.3s;
                 }
 
@@ -69,6 +72,10 @@ body {
                     }
                 }
             }
+        }
+        #ft {
+            font-size: 14px;
+            text-align: center;
         }
         
     }

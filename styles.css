@@ -11,6 +11,7 @@
   --surface-color-light-mode: rgba(0, 0, 0, 0.05);
   --text-color-light-mode: #000;
   --surface-color-light-mode-hover: rgba(0, 0, 0, 0.02);
+  --border-gradient: linear-gradient(to right, #996DFF, #FF876E, #FFB671);
   --fonte: "Inter", sans-serif;
   --preto: #000;
 }
@@ -26,9 +27,9 @@ body #main {
   padding: 56px 24px 0px;
 }
 body #main .profile #pic {
-  border: 2px solid black;
   border-radius: 50%;
   width: 112px;
+  height: 112px;
 }
 body #main .profile p {
   font-size: 16px;
@@ -43,7 +44,7 @@ body #main .links {
 body #main .links button {
   margin: 10px;
   border-radius: 8px !important;
-  border: 1px solid var(--stroke-color-light-mode, rgba(0, 0, 0, 0.5)) !important;
+  border: 1px solid rgba(0, 0, 0, 0.286);
   background: var(--surface-color-light-mode, rgba(0, 0, 0, 0.05)) !important;
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
@@ -51,6 +52,8 @@ body #main .links button {
 body #main .links button:hover {
   border: 1.5px solid var(--text-color-light-mode, #000) !important;
   background-color: var(--surface-color-light-mode-hover, rgba(0, 0, 0, 0.02)) !important;
+  -webkit-backdrop-filter: blur(9px);
+          backdrop-filter: blur(9px);
   transition: background 0.3s;
 }
 body #main .links button a {
@@ -62,4 +65,8 @@ body #main .links button a:hover {
   color: var(--preto);
   -webkit-backdrop-filter: blur(4px) !important;
           backdrop-filter: blur(4px) !important;
+}
+body #main #ft {
+  font-size: 14px;
+  text-align: center;
 }/*# sourceMappingURL=styles.css.map */
