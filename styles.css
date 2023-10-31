@@ -1,3 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte);
+  box-sizing: border-box;
+}
+
+:root {
+  --stroke-color-light-mode: rgba(0, 0, 0, 0.50);
+  --surface-color-light-mode: rgba(0, 0, 0, 0.05);
+  --text-color-light-mode: #000;
+  --surface-color-light-mode-hover: rgba(0, 0, 0, 0.02);
+  --fonte: "Inter", sans-serif;
+  --preto: #000;
+}
+
 body {
   background: url("./assets/backgrounds/bg-lightmode-y.gif") no-repeat top center/cover;
+}
+body #main {
+  height: 712px;
+  width: 360px;
+  border: 1px solid red;
+  margin: auto;
+  padding: 56px 24px 0px;
+}
+body #main .profile #pic {
+  border: 1px solid 0;
+  border-radius: 50%;
+  width: 112px;
+}
+body #main .profile p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  margin: 8px 0px 0px 0px;
+}
+body #main .links {
+  padding: 24px;
+  gap: 16px;
+}
+body #main .links button {
+  border-radius: 8px !important;
+  border: 1px solid var(--stroke-color-light-mode, rgba(0, 0, 0, 0.5)) !important;
+  background: var(--surface-color-light-mode, rgba(0, 0, 0, 0.05)) !important;
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+body #main .links button:hover {
+  border: 1.5px solid var(--text-color-light-mode, #000) !important;
+  background-color: var(--surface-color-light-mode-hover, rgba(0, 0, 0, 0.02)) !important;
+  transition: background 0.3s;
+}
+body #main .links button a {
+  color: var(--text-color-light-mode, #000);
+  text-decoration: none;
+  font-family: 500;
+}
+body #main .links button a:hover {
+  color: var(--preto);
+  -webkit-backdrop-filter: blur(4px) !important;
+          backdrop-filter: blur(4px) !important;
 }/*# sourceMappingURL=styles.css.map */
