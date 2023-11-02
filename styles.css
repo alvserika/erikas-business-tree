@@ -7,13 +7,20 @@
 }
 
 :root {
-  --stroke-color-light-mode: rgba(0, 0, 0, 0.50);
-  --surface-color-light-mode: rgba(0, 0, 0, 0.05);
-  --text-color-light-mode: #000;
-  --surface-color-light-mode-hover: rgba(0, 0, 0, 0.02);
-  --border-gradient: linear-gradient(to right, #996DFF, #FF876E, #FFB671);
+  /*dark mode*/
+  --text-color-dark-mode: #FFFFFF;
+  --stroke-color-dark-mode:#FFFFFF80;
+  --surface-color-dark-mode: #FFFFFF1A;
+  --surface-color-dark-mode-hover: #FFFFFF0D;
+  --highlight-color-dark-mode:#FFFFFF33;
+  /*light mode*/
+  --text-color-light-mode: #000000;
+  --stroke-color-light-mode: #00000080;
+  --surface-color-light-mode: #0000000D;
+  --surface-color-light-mode-hover: #00000005;
+  --highlight-color-light-mode: #0000001A;
+  --border-gradient: linear-gradient(to right, #996DFF, #f40992, #ffa149);
   --fonte: "Inter", sans-serif;
-  --preto: #000;
 }
 
 body {
@@ -22,14 +29,49 @@ body {
 body #main {
   height: 712px;
   width: 360px;
-  border: 1px solid red;
+  border: 1px solid transparent;
   margin: auto;
   padding: 56px 24px 0px;
 }
-body #main .profile #pic {
-  border-radius: 50%;
+body #main .profile .pic-container {
+  position: relative;
   width: 112px;
   height: 112px;
+}
+body #main .profile .pic-container #verify {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+}
+body #main .profile .pic-container #pic {
+  width: 112px;
+  height: 112px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1; /* Coloca a imagem na camada superior */
+}
+body #main .profile .pic-container .pic-border {
+  position: absolute;
+  top: -3px;
+  right: 0px;
+  left: -3px;
+  width: 118px;
+  height: 118px;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  background: var(--border-gradient) padding-box, var(--border-gradient) border-box;
+  animation: rotateBorder 4s linear infinite;
+}
+@keyframes rotateBorder {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 body #main .profile p {
   font-size: 16px;
@@ -44,25 +86,25 @@ body #main .links {
 body #main .links button {
   margin: 10px;
   border-radius: 8px !important;
-  border: 1px solid rgba(0, 0, 0, 0.286);
-  background: var(--surface-color-light-mode, rgba(0, 0, 0, 0.05)) !important;
+  border: 1px solid var(--stroke-color-light-mode);
+  background: var(--surface-color-light-mode);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
 }
 body #main .links button:hover {
-  border: 1.5px solid var(--text-color-light-mode, #000) !important;
-  background-color: var(--surface-color-light-mode-hover, rgba(0, 0, 0, 0.02)) !important;
+  border: 1.5px solid var(--text-color-light-mode) !important;
+  background-color: var(--surface-color-light-mode-hover) !important;
   -webkit-backdrop-filter: blur(9px);
           backdrop-filter: blur(9px);
   transition: background 0.3s;
 }
 body #main .links button a {
-  color: var(--text-color-light-mode, #000);
+  color: var(--text-color-light-mode);
   text-decoration: none;
   font-family: 500;
 }
 body #main .links button a:hover {
-  color: var(--preto);
+  color: var(--);
   -webkit-backdrop-filter: blur(4px) !important;
           backdrop-filter: blur(4px) !important;
 }
