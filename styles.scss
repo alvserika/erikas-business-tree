@@ -10,11 +10,13 @@
     
     /*light mode*/
     --bg-url: url('./assets/backgrounds/bg-lightmode-y.gif');
+    --switcher-bg-url: url("./assets/switcher/sun.svg");
     --text-color: #000000;
     --stroke-color: #00000080;
     --surface-color: #0000000D;
     --surface-color-hover: #00000005;
     --highlight-color: #0000001A;
+    
 
     --border-gradient: linear-gradient(to right, #996DFF, #f40992, #ffa149);
     --fonte: 'Inter', sans-serif;
@@ -22,7 +24,8 @@
 }
 .dark {
     /*dark mode*/
-    --bg-url: url('./assets/backgrounds/bg-darkmode-y.gif');
+    --bg-url: url('./assets/backgrounds/bg-darkmode3-y.gif');
+    --switcher-bg-url: url("./assets/switcher/moon-stars.svg");
     --text-color: #FFFFFF;
     --stroke-color:#FFFFFF80;
     --surface-color: #FFFFFF1A;
@@ -93,6 +96,38 @@ body {
                         line-height: 24px; /* 150% */
                         margin: 8px 0px 0px 0px;
                     }
+        }
+
+        #switch {
+            position: relative;
+            width: 64px;
+            margin: 4px auto;
+
+            button {
+                width: 32px;
+                height: 32px;
+                background: white var(--switcher-bg-url) no-repeat center;
+                border: 0px;
+                border-radius: 50%;
+
+                /* sobrepondo o switcher */
+                position: absolute;
+                transform: translateY(-50%);
+                top: 50%;
+                right: 0;
+                z-index: 1;
+            }
+            span {
+                display:block;
+                width: 64px;
+                height: 24px;
+                background: var(--surface-color);
+                border: var(--stroke-color);
+                border: 1px solid var(--stroke-color);
+                border-radius: 9999px;
+                backdrop-filter: blur(4px);
+                
+            }
         }
 
         .links {
