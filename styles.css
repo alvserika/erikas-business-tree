@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 * {
   margin: 0;
@@ -107,6 +108,20 @@ body #main .links button a:hover {
   color: var(--);
   -webkit-backdrop-filter: blur(4px) !important;
           backdrop-filter: blur(4px) !important;
+}
+body #main #portifolio {
+  margin-top: -50px;
+}
+body #main #portifolio .em-breve {
+  position: absolute;
+  top: 50%;
+  left: 80%; /* Alinha à direita do botão */
+  transform: translate(-50%, -50%); /* Centraliza verticalmente */
+  background: rgb(203, 0, 0);
+  color: #fff; /* Cor do texto da etiqueta 'Em Breve' */
+  padding: 3px 3px;
+  border-radius: 4px;
+  font-size: 8px;
 }
 body #main #ft {
   font-size: 14px;

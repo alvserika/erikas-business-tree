@@ -120,6 +120,20 @@ body {
                 }
             }
         }
+        #portifolio {
+            margin-top: -50px;
+            .em-breve {
+                position: absolute;
+                top: 50%;
+                left: 80%; /* Alinha à direita do botão */
+                transform: translate(-50%, -50%); /* Centraliza verticalmente */
+                background: rgb(203, 0, 0) ;
+                color: #fff; /* Cor do texto da etiqueta 'Em Breve' */
+                padding: 3px 3px;
+                border-radius: 4px;
+                font-size: 8px;
+            }
+        }
         #ft {
             font-size: 14px;
             text-align: center;
