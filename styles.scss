@@ -7,27 +7,31 @@
     box-sizing: border-box;
 }
 :root {
-    /*dark mode*/
-    --text-color-dark-mode: #FFFFFF;
-    --stroke-color-dark-mode:#FFFFFF80;
-    --surface-color-dark-mode: #FFFFFF1A;
-    --surface-color-dark-mode-hover: #FFFFFF0D;
-    --highlight-color-dark-mode:#FFFFFF33;
     
     /*light mode*/
-    --text-color-light-mode: #000000;
-    --stroke-color-light-mode: #00000080;
-    --surface-color-light-mode: #0000000D;
-    --surface-color-light-mode-hover: #00000005;
-    --highlight-color-light-mode: #0000001A;
-    
-
+    --bg-url: url('./assets/backgrounds/bg-lightmode-y.gif');
+    --text-color: #000000;
+    --stroke-color: #00000080;
+    --surface-color: #0000000D;
+    --surface-color-hover: #00000005;
+    --highlight-color: #0000001A;
 
     --border-gradient: linear-gradient(to right, #996DFF, #f40992, #ffa149);
     --fonte: 'Inter', sans-serif;
+
 }
+.dark {
+    /*dark mode*/
+    --bg-url: url('./assets/backgrounds/bg-darkmode-y.gif');
+    --text-color: #FFFFFF;
+    --stroke-color:#FFFFFF80;
+    --surface-color: #FFFFFF1A;
+    --surface-color-hover: #FFFFFF0D;
+    --highlight-color:#FFFFFF33;
+}
+
 body {
-    background: url('./assets/backgrounds/bg-lightmode-y.gif') no-repeat top center/cover;
+    background: var(--bg-url) no-repeat top center/cover;
     
 
     #main {
@@ -82,6 +86,7 @@ body {
             }
             
                     p {
+                        color: var(--text-color);
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 500;
@@ -96,19 +101,19 @@ body {
             button {
                 margin: 10px;
                 border-radius: 8px !important;
-                border: 1px solid var(--stroke-color-light-mode);
-                background: var(--surface-color-light-mode);
+                border: 1px solid var(--stroke-color);
+                background: var(--surface-color);
                 backdrop-filter: blur(4px);
 
                 &:hover {
-                    border: 1.5px solid var(--text-color-light-mode) !important;
-                    background-color: var(--surface-color-light-mode-hover) !important;
+                    border: 1.5px solid var(--text-color) !important;
+                    background-color: var(--surface-color-hover) !important;
                     backdrop-filter: blur(9px);
                     transition: background 0.3s;
                 }
 
                 a {
-                    color: var(--text-color-light-mode);
+                    color: var(--text-color);
                     text-decoration: none;
                     font-family: 500;
 
@@ -135,6 +140,7 @@ body {
             }
         }
         #ft {
+            color: var(--text-color);
             font-size: 14px;
             text-align: center;
         }
