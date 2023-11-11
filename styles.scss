@@ -31,12 +31,19 @@
     --surface-color: #FFFFFF1A;
     --surface-color-hover: #FFFFFF0D;
     --highlight-color:#FFFFFF33;
+
+    #switch {
+        button {
+        left: 0;
+        right: initial;
+        }
+      }
 }
+
 
 body {
     background: var(--bg-url) no-repeat top center/cover;
     
-
     #main {
         height: 712px;
         width: 360px;
@@ -75,7 +82,7 @@ body {
                     border: 4px solid transparent;
                     border-radius: 50%;
                     background: var(--border-gradient) padding-box, var(--border-gradient) border-box;
-                    animation: rotateBorder 4s linear infinite;
+                    animation: rotateBorder 2s linear infinite;
                     }
                 
                     @keyframes rotateBorder {
@@ -103,7 +110,7 @@ body {
             width: 64px;
             margin: 4px auto;
 
-            button {
+            #switcher {
                 width: 32px;
                 height: 32px;
                 background: white var(--switcher-bg-url) no-repeat center;
@@ -112,10 +119,11 @@ body {
 
                 /* sobrepondo o switcher */
                 position: absolute;
-                transform: translateY(-50%);
                 top: 50%;
-                right: 0;
+                right: initial;
+                left: 0;
                 z-index: 1;
+                transform: translateY(-50%);
             }
             span {
                 display:block;
