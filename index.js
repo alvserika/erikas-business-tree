@@ -9,13 +9,10 @@ botoes.forEach((botao) => {
     botoesContainer.innerHTML += Botoes(botao);
 });
 
-function trocarPosicao() {
-    const botao = document.querySelector('#switcher')
-    botao.style.switch.button.left = inital
-    botao.style.switch.button.right = 0
-
+export function toggleMode() {
+    const html = document.documentElement
+    html.classList.toggle("dark")
 }
-
 
 
 
