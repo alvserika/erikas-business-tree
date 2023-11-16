@@ -9,7 +9,7 @@ botoes.forEach((botao) => {
     botoesContainer.innerHTML += Botoes(botao);
 });
 
-export function toggleMode() {
+function toggleMode() {
     const html = document.documentElement;
     const switchElement = document.getElementById('switch');
     const button = document.getElementById('idbutton');

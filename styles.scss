@@ -126,9 +126,8 @@ body {
                 animation: slide-back 0.2s;
                 transition: left 0.2s ease;
 
-                
- 
-                :hover {
+    
+                &:hover {
                     outline: 8px solid var(--highlight-color);
                 }
             }
