@@ -9,15 +9,26 @@ botoes.forEach((botao) => {
     botoesContainer.innerHTML += Botoes(botao);
 });
 
-// Função para alternar o modo
 export function toggleMode() {
     const html = document.documentElement;
-    html.classList.toggle("dark");
-}
-
-const switchElement = document.getElementById('switch');
-switchElement.addEventListener('click', toggleMode);
-
-
+    const switchElement = document.getElementById('switch');
+    const button = document.getElementById('idbutton');
+  
+    // Verifica se a classe 'dark' está presente
+    const isDarkMode = html.classList.contains('dark');
+  
+    // Adiciona ou remove a classe 'dark' no HTML
+    html.classList.toggle('dark');
+  
+    // Adiciona a lógica de deslizamento diretamente no botão
+    if (isDarkMode) {
+      button.style.left = '0'; // Posição inicial (esquerda)
+    } else {
+      button.style.left = '50%'; // Nova posição (direita)
+    }
+  }
+  
+  const switchElement = document.getElementById('switch');
+  switchElement.addEventListener('click', toggleMode);
 
 

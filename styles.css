@@ -110,6 +110,7 @@ body #main #switch button {
   z-index: 1;
   transform: translateY(-50%);
   animation: slide-back 0.2s;
+  transition: left 0.2s ease;
 }
 body #main #switch button :hover {
   outline: 8px solid var(--highlight-color);
