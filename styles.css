@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 * {
   margin: 0;
@@ -160,7 +159,7 @@ body #main #portifolio {
 body #main #portifolio .em-breve {
   position: absolute;
   top: 50%;
-  left: 80%; /* Alinha à direita do botão */
+  left: calc(100% - 30px);
   transform: translate(-50%, -50%); /* Centraliza verticalmente */
   background: rgb(203, 0, 0);
   color: #fff; /* Cor do texto da etiqueta 'Em Breve' */

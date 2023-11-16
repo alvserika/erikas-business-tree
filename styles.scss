@@ -183,7 +183,7 @@ body {
             .em-breve {
                 position: absolute;
                 top: 50%;
-                left: 80%; /* Alinha à direita do botão */
+                left: calc(100% - 30px);
                 transform: translate(-50%, -50%); /* Centraliza verticalmente */
                 background: rgb(203, 0, 0) ;
                 color: #fff; /* Cor do texto da etiqueta 'Em Breve' */
