@@ -22,7 +22,7 @@
 
 .dark {
   /*dark mode*/
-  --bg-url: url("./assets/backgrounds/bg-darkmode3-y.gif");
+  --bg-url: url("./assets/backgrounds/bg-darkmode2-x.gif");
   --switcher-bg-url: url("./assets/switcher/moon-stars.svg");
   --text-color: #FFFFFF;
   --stroke-color:#FFFFFF80;
@@ -68,7 +68,7 @@ body #main .profile .pic-container .pic-border {
   position: absolute;
   top: -7px;
   right: 0px;
-  left: -5px;
+  left: -7px;
   width: 125px;
   height: 125px;
   border: 4px solid transparent;
@@ -111,7 +111,7 @@ body #main #switch button {
   transform: translateY(-50%);
   animation: slide-back 0.2s;
 }
-body #main #switch button:hover {
+body #main #switch button :hover {
   outline: 8px solid var(--highlight-color);
 }
 body #main #switch span {
@@ -136,8 +136,8 @@ body #main .links button {
           backdrop-filter: blur(4px);
 }
 body #main .links button:hover {
-  border: 1.5px solid var(--text-color) !important;
-  background-color: var(--surface-color-hover) !important;
+  border: 1.5px solid var(--text-color);
+  background-color: var(--surface-color-hover);
   -webkit-backdrop-filter: blur(9px);
           backdrop-filter: blur(9px);
   transition: background 0.3s;
@@ -150,7 +150,6 @@ body #main .links button a {
   transition: background 0.2s;
 }
 body #main .links button a:hover {
-  color: var(--surface-color-hover);
   -webkit-backdrop-filter: blur(4px) !important;
           backdrop-filter: blur(4px) !important;
 }
@@ -182,25 +181,4 @@ body #main #ft a {
 body #main #ft a :hover {
   color: #f40992 !important;
   text-decoration: underline;
-}
-
-/* animation */
-@keyframes slide-in {
-  from {
-    left: 0;
-  }
-  to {
-    left: 50%;
-  }
-}
-
-@keyframes slide-back {
-  from {
-    left: 50%;
-  }
-  to {
-    left: 0;
-  }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

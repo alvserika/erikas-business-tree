@@ -24,7 +24,7 @@
 }
 .dark {
     /*dark mode*/
-    --bg-url: url('./assets/backgrounds/bg-darkmode3-y.gif');
+    --bg-url: url('./assets/backgrounds/bg-darkmode2-x.gif');
     --switcher-bg-url: url("./assets/switcher/moon-stars.svg");
     --text-color: #FFFFFF;
     --stroke-color:#FFFFFF80;
@@ -75,7 +75,7 @@ body {
                     position: absolute;
                     top: -7px;
                     right: 0px;
-                    left: -5px;
+                    left: -7px;
                     width: 125px;
                     height: 125px;
                     border: 4px solid transparent;
@@ -153,8 +153,8 @@ body {
                 backdrop-filter: blur(4px);
 
                 &:hover {
-                    border: 1.5px solid var(--text-color) !important;
-                    background-color: var(--surface-color-hover) !important;
+                    border: 1.5px solid var(--text-color) ;
+                    background-color: var(--surface-color-hover) ;
                     backdrop-filter: blur(9px);
                     transition: background 0.3s;
                 }
@@ -168,7 +168,7 @@ body {
                     transition: background 0.2s;
 
                     &:hover {
-                        color: var(--surface-color-hover);
+                        //color: var(--surface-color-hover);
                         backdrop-filter: blur(4px) !important;
                         
                     }
