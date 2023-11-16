@@ -159,8 +159,8 @@ body #main #portifolio {
 body #main #portifolio .em-breve {
   position: absolute;
   top: 50%;
-  left: calc(100% - 30px);
-  transform: translate(-50%, -50%); /* Centraliza verticalmente */
+  right: 0;
+  transform: translate(-60%, -50%); /* Centraliza verticalmente */
   background: rgb(203, 0, 0);
   color: #fff; /* Cor do texto da etiqueta 'Em Breve' */
   padding: 3px 3px;
