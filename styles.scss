@@ -32,6 +32,11 @@
     --surface-color-hover: #FFFFFF0D;
     --highlight-color:#FFFFFF33;
 
+    background-repeat: no-repeat;
+    background-attachment: top;
+    background-position: center;
+    background-size: cover;
+
     #switch {
         button {
             animation: slide-in 0.2s forwards;
