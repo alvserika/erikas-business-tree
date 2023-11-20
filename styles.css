@@ -39,10 +39,11 @@
 
 body {
   background: var(--bg-url) no-repeat top center/cover;
-  background-color: rgb(203, 0, 0) !important;
+  background-color: rgb(255, 255, 255) !important;
   height: 100vh;
 }
 body #main {
+  width: 360px;
   border: 1px solid transparent;
   margin: auto;
   padding: 56px 24px 0px;
