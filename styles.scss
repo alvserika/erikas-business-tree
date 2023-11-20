@@ -36,6 +36,7 @@
     background-attachment: top;
     background-position: center;
     background-size: cover;
+   
 
     #switch {
         button {
@@ -47,10 +48,12 @@
 
 body {
     background: var(--bg-url) no-repeat top center/cover;
-    
+    //overflow-x: hidden;
+    background-color:rgb(203, 0, 0) !important;
+    height: 100vh;
     #main {
-        height: 712px;
-        width: 360px;
+        //height: 712px;
+        //width: 360px;
         border: 1px solid transparent;
         margin: auto;
         padding: 56px 24px 0px;
