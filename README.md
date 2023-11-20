@@ -2,6 +2,8 @@
 
  Arvore de links personalizada, ideal para ser incluída na bio do Instagram. Oferece uma maneira organizada e atraente de compartilhar diferentes links e recursos. O projeto Erika's Business Tree é uma adaptação e refatoração do projeto Devlinks da Rocketseat. Esta versão utiliza Bootstrap para facilitar o desenvolvimento responsivo, SASS para estilos mais organizados e modularização JavaScript para otimizar o design e a manutenção do código no longo prazo.
 
+![Erika's Business Tree](https://github.com/alvserika/erikas-business-tree/raw/main/assets/readme-img.gif)
+
 ## Características Principais
 
 - **Bootstrap**: Utilizado para garantir um design responsivo e uma experiência consistente em diferentes dispositivos.
