@@ -26,7 +26,3 @@
 - `data/`: Pasta que contém dados específicos do projeto.
     - `data.js`: Arquivo que contém dados utilizados na aplicação.
 
-## Personalização
-
-Sinta-se à vontade para personalizar o projeto ajustando os estilos, adicionando mais funcionalidades ou adaptando-o conforme suas necessidades específicas.
-
